@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&family=Zeyada&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+    body {
+      background-image: url(images/backgroundblur.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Poppins';
+      color: rgb(229, 229, 229);
+    }
+
+    .menuTitle {
+      font-family: "Charmonman", cursive;
+      font-weight: 400;
+      margin: auto;
+      padding-top: 350px;
+      width: 120px;
+      min-height: 130px;
+      text-align: center;
+      color: rgb(44, 41, 41);
+
+
+    }
+
+    .burgerImage {
+
+      border-style: none;
+      width: 300px;
+      height: 200px;
+      border-radius: 0px 100px 100px 0px;
+      position: absolute;
+      left: 0px;
+      top: 90px;
+      background-image: url(images/cheeseburger.jpg);
+      background-size: cover;
+
+    }
+
+    .burgerText ul li {
+      list-style-type: none;
+    }
+
+    .burgerText .mainCourse {
+      position: absolute;
+      left: 380px;
+      top: 105px;
+      background-color: rgb(81, 96, 56);
+      border-radius: 10px;
+      padding: 0px 5px;
+      color: rgb(229, 229, 229);
+
+    }
+
+    .burgerText .foodName {
+      position: absolute;
+      top: 140px;
+      left: 280px;
+
+    }
+
+    .burgerText .prices {
+      position: absolute;
+      top: 140px;
+      left: 500px;
+
+    }
+
+    .pizzaImage {
+
+      border-style: none;
+      width: 300px;
+      height: 200px;
+      border-radius: 100px 0px 0px 100px;
+      position: absolute;
+      right: 0px;
+      top: 90px;
+      background-image: url(images/pizza2.jpg);
+      background-size: cover;
+    }
+
+    .pizza ul li {
+      list-style-type: none;
+    }
+
+    .pizzaText {
+      position: absolute;
+      right: 400px;
+      top: 105px;
+      background-color: rgb(81, 96, 56);
+      color: rgb(229, 229, 229);
+      border-radius: 10px;
+      padding: 0px 5px;
+      margin-bottom: 5px;
+    }
+
+    .pizzaName {
+      position: absolute;
+      top: 140px;
+      right: 450px;
+    }
+
+    .pizzaPrices {
+      position: absolute;
+      top: 140px;
+      right: 330px;
+
+    }
+
+    .beverages ul li {
+      list-style-type: none;
+    }
+
+    .beveragesImage {
+      border-style: none;
+      width: 300px;
+      height: 200px;
+      border-radius: 100px 0px 0px 100px;
+      position: absolute;
+      right: 0px;
+      bottom: 80px;
+      background-image: url(images/coffee.jpg);
+      background-size: cover;
+
+    }
+
+    .beveragesText {
+      position: absolute;
+      right: 380px;
+      bottom: 210px;
+      background-color: rgb(81, 96, 56);
+      border-radius: 10px;
+      padding: 0px 5px;
+      color: rgb(229, 229, 229);
+    }
+
+    .beveragesName {
+      position: absolute;
+      bottom: 80px;
+      right: 460px;
+    }
+
+    .beveragesPrices {
+      position: absolute;
+      bottom: 80px;
+      right: 330px;
+
+    }
+
+    .pastaImage {
+      border-style: none;
+      width: 300px;
+      height: 200px;
+      border-radius: 0px 100px 100px 0px;
+      position: absolute;
+      left: 0px;
+      bottom: 80px;
+      background-image: url(images/pasta.jpg);
+      background-size: cover;
+
+    }
+
+    .pasta ul li {
+      list-style-type: none;
+    }
+
+    .pastaText {
+      position: absolute;
+      left: 380px;
+      bottom: 210px;
+      background-color: rgb(81, 96, 56);
+      border-radius: 10px;
+      padding: 0px 5px;
+      color: rgb(229, 229, 229);
+
+    }
+
+    .pastaName {
+      position: absolute;
+      bottom: 80px;
+      left: 280px;
+
+    }
+
+    .pastaPrices {
+      position: absolute;
+      bottom: 80px;
+      left: 500px;
+
+    }
+
+    @font-face {
+      font-family: 'Moon Time Regular';
+      src: url(../MoonTime\ Regular\ 400.otf);
+    }
+
+    .ourMenu {
+      font-family: 'Moon Time Regular';
+      font-size: 65px;
+      position: absolute;
+      bottom: 240px;
+      right: 700px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <h1 class="ourMenu" style="color: rgb(255, 255, 255);">Our <br> Menu</h1>
+    <div class="burgerImage">
+    </div>
+    <div class="burgerText">
+      <h3 class="mainCourse"> BURGERS</h3>
+      <ul class="foodName">
+        <li>Classic Burger</li>
+        <li>Cheeseburger </li>
+        <li>Chicken Burger </li>
+        <li>Vegeterian Burger </li>
+        <li>Vegie Burger</li>
+      </ul>
+      <ul class="prices">
+        <li>$34</li>
+        <li>$22</li>
+        <li>$23</li>
+        <li>$33</li>
+        <li>$24</li>
+      </ul>
+    </div>
+    <div class="pizzaImage"></div>
+    <div class="pizza">
+      <h3 class="pizzaText">PIZZA</h3>
+      <ul class="pizzaName">
+        <li>Margherita</li>
+        <li>Burrata </li>
+        <li>Pepperoni</li>
+        <li>Vegeterian </li>
+        <li>Meat Lover </li>
+      </ul>
+      <ul class="pizzaPrices">
+        <li>$10</li>
+        <li>$12</li>
+        <li>$11</li>
+        <li>$10</li>
+        <li>$15</li>
+      </ul>
+    </div>
+    <div class="pastaImage">
+    </div>
+    <div class="pasta">
+      <h3 class="pastaText"> PASTA</h3>
+      <ul class="pastaName">
+        <li>Spaghetti Bolonese</li>
+        <li>Penne Rosa </li>
+        <li>Ravioli </li>
+        <li>Lasagne </li>
+        <li>Fettuccini Alfredo </li>
+      </ul>
+      <ul class="pastaPrices">
+        <li>$12</li>
+        <li>$13</li>
+        <li>$15</li>
+        <li>$13</li>
+        <li>$12</li>
+      </ul>
+    </div>
+
+
+    <div class="beveragesImage"></div>
+    <div class="beverages">
+      <h3 class="beveragesText"> BEVERAGES</h3>
+      <ul class="beveragesName">
+        <li>Coffee</li>
+        <li>Milkshake</li>
+        <li>Smoothie </li>
+        <li>Tea </li>
+        <li>Water </li>
+      </ul>
+      <ul class="beveragesPrices">
+        <li>$3</li>
+        <li>$4</li>
+        <li>$5</li>
+        <li>$4</li>
+        <li>$3</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
