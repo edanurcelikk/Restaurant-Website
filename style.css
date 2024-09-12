@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+body {
+   background-image: url(images/background2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: 'Poppins';
+   scroll-behavior: smooth;
+}
+
+.menu ul {
+   float: right;
+}
+
+.menu ul li {
+   list-style-type: none;
+   font-size: 20px;
+   background-color: rgb(106, 126, 73);
+   width: 100px;
+   height: 50px;
+   float: left;
+   margin: 10px;
+   border-style: solid;
+   border-color: rgb(106, 126, 73);
+   border-radius: 20px;
+   padding: 5px 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: rgb(247, 240, 231);
+}
+
+.menu ul li a:hover {
+   text-decoration: underline;
+   color: rgb(63, 75, 43);
+}
+
+.textBox {
+   width: 800px;
+   height: 500px;
+   padding: 30px;
+   position: absolute;
+   bottom: 0px;
+   left: 50px;
+
+}
+
+.article {
+   color: white;
+   font-size: 50px;
+   margin-bottom: 0px;
+
+}
+
+.text {
+   color: white;
+   font-size: 20px;
+   margin-top: 5px;
+}
