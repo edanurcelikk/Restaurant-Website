@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+    .page {
+      font-family: 'Poppins';
+    }
+
+    body {
+      background-image: url(images/backgroundblur.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .contactBox {
+      position: absolute;
+      left: 100px;
+      top: 250px;
+    }
+
+    .hours {
+      position: absolute;
+      left: 380px;
+      top: 250px;
+    }
+
+    .findus {
+      position: absolute;
+      left: 630px;
+      top: 250px;
+    }
+
+    .map {
+      width: 800px;
+      height: 300px;
+    }
+
+    .insta {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 125px;
+      left: 100px;
+      border-radius: 15px;
+    }
+
+    .face {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 125px;
+      left: 160px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="contactBox">
+      <h3>CONTACT</h3>
+      <p>500 Terry Francine Street<br>
+        San Francisco, CA 94158<br>
+        Email: Info@mysite.com<br>
+        ​Phone: 123-456-7890 </p>
+    </div>
+    <div class="hours">
+      <h3>OPENING HOURS</h3>
+      <p>Monday - Friday<br>
+        11am - 11pm<br>
+        Saturday - Sunday<br>
+        10am - 12am</p>
+    </div>
+    <div class="findus">
+      <h3>FIND US</h3>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.9964103731!2d-122.52000150281195!3d37.75780703789626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Kaliforniya%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1724010206005!5m2!1str!2str"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="icon">
+      <a href="https://www.instagram.com/"> <img class="insta" src="images/instagramlogo.png"></a>
+      <a href="https://www.facebook.com/"><img class="face" src="images/facebooklogo.png"></a>
+    </div>
+  </div>
+</body>
+
+</html>
